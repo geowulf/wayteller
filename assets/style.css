@@ -1,0 +1,164 @@
+/* The Wayteller — shared styles */
+:root {
+  --paper: #faf7f1;
+  --ink: #23272f;
+  --muted: #6b6f76;
+  --navy: #1b263b;
+  --gold: #b08d4f;
+  --gold-soft: #f3e9d4;
+  --line: #e6ddcc;
+  --card: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  font-size: 17px;
+}
+
+h1, h2, h3, .brand {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+a { color: var(--navy); }
+a:hover { color: var(--gold); }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+.site-header {
+  background: var(--navy);
+  color: #fff;
+  padding: 20px 0;
+}
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 960px;
+}
+.brand { font-size: 26px; letter-spacing: 0.5px; }
+.brand a { color: #fff; text-decoration: none; }
+.brand small {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 4px;
+}
+nav a {
+  color: #d8d2c4;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+}
+nav a:hover, nav a.active { color: var(--gold); }
+
+/* Hero */
+.hero { padding: 64px 0 48px; text-align: center; }
+.hero h1 { font-size: 44px; margin-bottom: 12px; }
+.hero .lede { font-size: 20px; color: var(--muted); max-width: 600px; margin: 0 auto; }
+
+/* Vote banner */
+.vote-banner {
+  background: var(--gold-soft);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.vote-banner .text { flex: 1; min-width: 240px; }
+.vote-banner h2 { margin: 0 0 6px; font-size: 24px; }
+.vote-banner p { margin: 0 0 12px; color: var(--muted); }
+.btn {
+  display: inline-block;
+  background: var(--navy);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.btn:hover { background: var(--gold); color: var(--navy); }
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card:hover { border-color: var(--gold); }
+.card h3 { margin: 0 0 8px; font-size: 22px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.card .kicker {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Page body */
+.page { padding: 48px 0 64px; }
+.page h1 { font-size: 38px; margin-bottom: 16px; }
+.page .standfirst { font-size: 19px; color: var(--muted); margin-bottom: 32px; }
+
+/* Vote page */
+.vote-hero { text-align: center; padding: 48px 0 24px; }
+.vote-hero h1 { font-size: 40px; }
+.qr-box {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 36px;
+  text-align: center;
+  margin: 32px auto;
+  max-width: 520px;
+}
+.qr-box img { max-width: 320px; width: 100%; height: auto; }
+.fine { color: var(--muted); font-size: 14px; text-align: center; }
+
+/* Footer */
+.site-footer {
+  background: var(--navy);
+  color: #a9a294;
+  padding: 32px 0;
+  font-size: 14px;
+  margin-top: 48px;
+}
+.site-footer .wrap { max-width: 960px; }
+.site-footer a { color: #d8d2c4; }
+
+hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 34px; }
+  nav a { margin-left: 14px; }
+}
