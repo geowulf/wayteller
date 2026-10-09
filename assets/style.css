@@ -129,6 +129,7 @@ nav a:hover, nav a.active { color: var(--gold); }
 .page { padding: 48px 0 64px; }
 .page h1 { font-size: 38px; margin-bottom: 16px; }
 .page .standfirst { font-size: 19px; color: var(--muted); margin-bottom: 32px; }
+.page h2 { font-size: 25px; color: var(--navy); margin: 38px 0 12px; }
 
 /* Blog posts */
 .eyebrow {
