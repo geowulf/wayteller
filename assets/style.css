@@ -130,6 +130,31 @@ nav a:hover, nav a.active { color: var(--gold); }
 .page h1 { font-size: 38px; margin-bottom: 16px; }
 .page .standfirst { font-size: 19px; color: var(--muted); margin-bottom: 32px; }
 
+/* Blog posts */
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.byline { color: var(--muted); font-size: 15px; margin: -8px 0 28px; }
+.post-figure { margin: 44px 0 0; }
+.post-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  display: block;
+}
+.post-figure figcaption {
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 /* Vote page */
 .vote-hero { text-align: center; padding: 48px 0 24px; }
 .vote-hero h1 { font-size: 40px; }
